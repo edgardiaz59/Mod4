@@ -10,16 +10,16 @@ const Card = ({item}) => {
     //const randomId = item.id * 1000;
 
     //item.image = 'https://picsum.photos/seed/' + randomId + '/600/600';
-
+    console.log(JSON.stringify(item));
     return (
         <TouchableOpacity 
-        style={styles.button} 
+        style={{backgroundColor: '#6a1111'}} 
         onPress={() => {navigation.navigate('Movie', { movie: item })}}>
             <View style={styles.container}>
                 <View style={[styles.card]}>
                     <Image
                         style={styles.cardImage}
-                        //source={{ uri: item.image}}
+                        source={{ uri: item.image }}
                     />
                     <View style={styles.cardContent} >
                         <View style={styles.cardHeader} >
@@ -38,26 +38,26 @@ export default Card;
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#fff',
+      backgroundColor: '#000000',
       alignItems: 'center',
       justifyContent: 'center',
-      padding: 15
+      padding: 15,
     },
     card: {
       borderWidth: 0,
       minHeight: 300,
-      shadowColor: '#000000',
+      shadowColor: '#fff',
       shadowOffset: {
         wdith: 2,
         height: 2
       },
-      shadowOpacity: 0.5,
+      shadowOpacity: 5,
       shadowRadius: 4,
       marginVertical: 12,
       marginTop: 0,
       backgroundColor: '#FFFFFF',
       marginRight: 0,
-      alignSelf: 'stretch'
+      alignSelf: 'stretch',
     },
     cardImage: {
       flex: 1,
@@ -65,11 +65,13 @@ const styles = StyleSheet.create({
       borderRadius: 3
     },
     cardContent: {
+      paddingBottom: -50,
       paddingVertical: 15,
-      paddingHorizontal: 15
+      paddingHorizontal: 50
     },
     title: {
-      fontSize: 28
+      fontSize: 28,
+      color: '#ffb221',
     },
     desc: {
       fontSize: 15
@@ -77,6 +79,9 @@ const styles = StyleSheet.create({
     cardHeader: {
       paddingVertical: 5
   
+    },
+    button: {
+      backgroundColor: '#6a1111'
     }
 
 });

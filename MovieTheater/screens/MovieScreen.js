@@ -20,8 +20,10 @@ const MovieScreen = ({ route }) => {
 export default MovieScreen;
 
 const styles = StyleSheet.create({
+
     container: {
         flex: 1,
+        backgroundColor: '#373737',
         padding: 10,
         paddingTop: 20
     },
@@ -35,11 +37,15 @@ const styles = StyleSheet.create({
     },
     title: {
         fontSize: 24,
+        color: '#fff',
         fontWeight: 'bold',
+        textAlign: 'center',
         marginBottom: 15,
     },
     body: {
-        fontSize: 18,
+        fontSize: 32,
+        letterSpacing: 4,
+        color: '#b8ff4c'
     },
     articleImage: {
         height: 250,

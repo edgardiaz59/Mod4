@@ -18,7 +18,7 @@ const Routes = () => {
                 />
                 <Stack.Screen name="Movie"
                               component={MovieScreen}
-                              options={{ title: 'Movie' }}
+                              options={{ title: 'Movie Showing' }}
                 />
             </Stack.Navigator>
         </NavigationContainer>
@@ -28,9 +28,10 @@ const Routes = () => {
 export default Routes;
 
 const styles = StyleSheet.create({
+
     container: {
         flex: 1,
-        backgroundColor: '#fff',
+        backgroundColor: '#373737',
         alignItems: 'center',
         justifyContent: 'center',
     },

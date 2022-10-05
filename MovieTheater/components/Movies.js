@@ -32,7 +32,6 @@ const Movies = ({movies}) => {
             </View>
         )
     }
-
 }
 
 export default Movies;
@@ -40,12 +39,13 @@ export default Movies;
 const styles = StyleSheet.create({
     container: {
       flex: 1,
+      backgroundColor: "#4a4a4a",
       padding: 10,
       paddingTop: 20,
     },
     list: {
       paddingHorizontal: 17,
-      backgroundColor: "#eeeeee",
+      backgroundColor: "#000000",
       paddingBottom: 12
     },
     header: {
@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
     },
     title: {
       fontSize: 38,
-      color: '#000',
+      color: '#ffb221',
       marginBottom: 20
     },
     separator: {
